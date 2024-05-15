@@ -1,0 +1,19 @@
+# Расширение сущности "Contexts" для генерации PlantUML диаграмм
+entities:
+  contexts:
+    # Представления контекстов в PlantUML
+    presentations:
+      plantuml:
+        params:
+          type: object
+          properties:
+            "dh-context-id":
+              title: Идентификатор контекста
+              type: string              
+              pattern: ^[0-9a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*(\.[0-9a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*)*$
+            "dh-focus-id":
+              title: Идентификатор требующий подсветку
+              type: string
+              pattern: ^[0-9a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*(\.[a-zA-Z0-9а-яА-Я][a-zA-Zа-яА-Я0-9_-]*)*$
+          required:
+            - dh-context-id
