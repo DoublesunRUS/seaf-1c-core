@@ -1,0 +1,10 @@
+entities:
+  seaf.ia.data_objects:
+    schema:
+      type: object
+      patternProperties:
+        "^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*(\\.[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*)*$":
+          type: object
+          required:
+            - title
+            - master_system
