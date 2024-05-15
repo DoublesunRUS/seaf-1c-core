@@ -1,0 +1,6 @@
+entities:
+  components:
+    schema:
+      patternProperties:
+        "^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9_-]*(\\.[a-zA-Zа-яА-Я0-9][a-zA-Zа-яА-Я0-9_-]*)*$":
+          type: object
