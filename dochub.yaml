@@ -8,11 +8,11 @@ $package:
     # Описание
     description: Sber Enterprise Architect Framework для 1С
     # Версия
-    version: 1.0.0
+    version: 1.0.1
     # Зависимости от других пакетов
     dependencies:
-      seaf-core: ">=1.2.6"
       dochub: ">=3.11.0"
+      seaf-core: ">=1.2.7"
 
 docs:
   dochub.welcome:
